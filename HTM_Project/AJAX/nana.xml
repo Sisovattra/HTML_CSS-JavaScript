@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cooperate>
+<employee>
+		<name>heng</name>
+		<id>456</id>
+		<age> 19</age>
+
+	</employee>
+	<employee>
+		<name>hong</name>
+		<id>457</id>
+		<age> 18</age>
+
+	</employee><employee>
+		<name>heang</name>
+		<id>458</id>
+		<age> 17</age>
+
+	</employee><employee>
+		<name>hean</name>
+		<id>459</id>
+		<age> 16</age>
+
+	</employee>
+</cooperate>

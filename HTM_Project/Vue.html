@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js">
+		
+	</script>
+</head>
+<body>
+	<div id="example">
+		<button v-on: click="error = !error">Toggle Error</button>
+		<button v-on: click="success = !success">Toggle Sucess</button>
+		<p v-if="erorr">There is an error</p>
+		<p v-else-if="success">Yeah,Success</p>
+
+		<p v-show="error">there is an error!</p>
+		<p v></p>
+	</div>
+
+</body>
+</html>

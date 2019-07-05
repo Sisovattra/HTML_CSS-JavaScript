@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function clicked(info)
+      {
+      		//var newstr = info.slice(-10,-5);
+      		//var newstr = info.substring(4,5);
+      		//var newstr = info.substr(5,5);
+      		//alert(newstr);
+      	//info = info.trim();
+      	//if(info=="Leang heng")
+      	//{
+      		//alert("Welcome : "+info+" your name has : "+info.length+" characters");
+
+      	//}
+      	// else
+      	// {
+      	// 	alert("Get lost from here...");
+      	// }
+
+      	//var pos = info.indexOf("l",30);
+      	//var pos = info.lastIndexOf("l",30);
+      	var pos = info.search("l");
+      	alert("Found at "+pos);
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/1.css">
+  </head>
+  <body>
+      <button onclick="clicked('Helloworld welcome to batch 6 today is a wonderful day andenjoy this day')">click me</button>
+  </body>
+</html>

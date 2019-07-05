@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      //var arr = [10,20,30];
+      var mArr =[
+                  [10,20,30],
+                  [40,50],
+                  [70,80,90,70]
+                ];
+     // var arrObj = [{id:123, name:"Eko"},{id:124,name:"Yuklin"}];
+     
+      var arr = [];
+      function clicked()
+      {
+        /*
+          //Using forEach
+          arr.forEach(test);
+        */
+        //arr[4] = 300; //Improper assigment to array
+        /*
+        arr.push(300);
+        alert(arr);
+        var ele = arr.pop();
+        alert(arr);
+        alert("The element popped out is : "+ele);
+        */
+        
+        /*
+        //Do not print array elements like the below statements
+
+        alert(mArr[0]);
+        alert(mArr[1]);
+        alert(mArr[2]);
+        */
+        //Efficient way to print the array elements
+        /*
+        for(i=0;i<mArr.length;i++)
+        {
+          for(j=0;j<mArr[i].length;j++)
+          {
+            alert(mArr[i][j]);
+          }
+        }
+        */
+        //Accessing array of objects
+        /*
+        for(i=0;i<arrObj.length;i++)
+        {
+          alert(arrObj[i].id+" : "+arrObj[i].name);  
+        }
+      */  
+
+      arr["one"]="Eishin";
+      arr["two"]="Junsei";
+      arr["three"] = "Yusuke";
+
+      alert(arr.length);
+
+      arr.forEach(test);
+      }
+
+      function test(num)
+      {
+        alert(num);
+      }
+    </script>
+  </head>
+  <body>
+      <div id = "div1">Test</div>
+      <button onclick="clicked()">click me</button>
+  </body>
+</html>

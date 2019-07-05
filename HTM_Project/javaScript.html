@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var str = "Y";
+		function clicked()
+		{
+			//\d----> Selects a number
+			//\w----> selects a character or number or---
+			//\s----> Selects a single while space
+
+			//var temp = str.replace(/\d/g,"***");
+			var temp=str.replace(/^[a-z]+$/gi,"*****");
+			alert(temp);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="clicked()">Click Me.....</button>
+
+</body>
+</html>

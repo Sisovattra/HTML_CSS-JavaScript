@@ -1,0 +1,90 @@
+<!--
+	Adding a Controller
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtr1">
+		{{firstName+" "+middleName+lastName}}
+	</div>
+	<script>
+		var app = angular.module("myApp",[]);
+		app.controller("myCtr1", function($scope)
+			{
+				$scope.firstName="Seang";
+				$scope.middleName="So";
+				$scope.lastName="sorphea";
+			});
+	</script>
+
+</body>
+</html>-->
+<!--
+	Adding a Directive
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp"w3-test-directive></div>
+	<script>
+		var app=angular.module("myApp",[]);
+		app.directive("w3TestDirective",function()
+		{
+			return{ 
+			
+				template : "I was made in a directive constructor!"
+			};
+
+
+		});
+	</script>
+
+</body>
+</html>-->
+<!--
+	Modules and Controllers in Files
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtr1">
+		{{firstName+" "+lastName}}
+	</div>
+	<script src="myApp.js"></script>
+	<script src="myCtr1.js"></script>
+
+</body>
+</html>-->
+<!--
+	When to load the library
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtr1">
+		{{firstName+" "+lastName}}
+	</div>
+	<script>
+		var app=angular.module("myApp",[]);
+		app.controller("myCtr1",function($scope)
+		{
+			$scope.firstName="Seang";
+			$scope.lastName="Sosorphea";
+		});
+	</script>
+	<p>She is a docter. She is a beautiful girl and friendly. More and more, she like help people around her. She'skindly. She is a person who always give good advice me. She told me Healthy is very important. Strenghtly bring beauty.........To sum up, She is my idol. I love her.</p>
+
+</body>
+</html>-->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function clicked()
+		{
+			var n=prompt();
+			var str="";
+			for(i=0;i<=n;i++)
+			{
+				for(j=0;j<i;j++)
+				{
+					if(i==0||i==n-1||j==0||j==n-1)
+					{
+						str=str+"*";
+					}
+					else
+					{
+						str=str+"*";
+					}
+				}
+				str=str+"\n";
+			}
+			console.log(str);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="clicked()">Click Me...</button>
+
+</body>
+</html>

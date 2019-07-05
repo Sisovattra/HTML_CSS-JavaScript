@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<script type="text/javascript">
+		var a = 
+		{
+			add : function(val1,val2)
+			{
+				return val1+val2;
+			},
+
+			sub : function(val1,val2)
+			{
+				return val1-val2;
+			},
+
+			mul : function(val1,val2)
+			{
+				return val1*val2;
+			},
+
+			div : function(val1,val2)
+			{
+				return val1/val2;
+			}
+		};
+		function callAdd()
+		{
+			var val1 = parseInt(document.getElementById("val1").value);
+			var val2 = parseInt(document.getElementById("val2").value);
+			var res = a.add(val1,val2);
+			alert("Sum = "+res);
+		}
+		function callSub()
+		{
+			var val1 = parseInt(document.getElementById("val1").value);
+			var val2 = parseInt(document.getElementById("val2").value);
+			var res = a.sub(val1,val2);
+			alert("Diff = "+res);
+		}
+		function callMul()
+		{
+			var val1 = parseInt(document.getElementById("val1").value);
+			var val2 = parseInt(document.getElementById("val2").value);
+			var res = a.mul(val1,val2);
+			alert("Product = "+res);
+		}
+		function callDiv()
+		{
+			var val1 = parseInt(document.getElementById("val1").value);
+			var val2 = parseInt(document.getElementById("val2").value);
+			var res = a.div(val1,val2);
+			alert("Quotient = "+res);
+		}
+
+  	</script>
+</head>
+<body>
+	
+	<input type="text" id="val1" placeholder="Enter the First Number...">
+	<input type="text" id="val2" placeholder="Enter the Second Number..."> <br>
+	<button onclick="callAdd()">Add</button>
+	<button onclick="callSub()">Sub</button>
+	<button onclick="callMul()">Mul</button>
+	<button onclick="callDiv()">Div</button> 
+
+
+</body>
+</html>
+

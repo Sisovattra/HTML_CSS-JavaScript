@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function a() {
+		var xhr= new XMLHttpRequest();
+		xhr.onreadystatechange= function(){
+			if(this.readyState==4 && this.status==200){
+
+					//console.log(this.responseXML);
+					alert(this.responseText);
+					//myFunction(this);
+				}
+			
+		}
+
+		xhr.open("GET","nana.xml",true);
+		xhr.send();
+	}
+</script>
+
+</head>
+<body>
+	<button type="button" onclick="a()">Click</button>
+	
+</body>
+</html>
+<!-- we use AJAX for no need refresh , we can store data in local file(server site) that mean when user need data 
+	in local file we put data . Two methods of ajax like post(client oy data tv server site) and get(server site oy data tv client) and we use only get(). When we need get pi ke yg trov request tv ke yg trov use XML Http Request( State( 0 1 2 3 4 * success) and status{ relate to server it has 400 403 404(not file *error)}).
+	State and status is proccesing in server site.
+	> When we oy data tv ke :
+	                    .text 
+	                    .XML
+	                    .PHP
+	                    .ASP
+	                    .JSON
+	                    .Database
+
+	    Respone has two Text and XML 
+
+	Fucntion two del ot oy joal ban keii open and send hx open and send kei nv jnong Get
+	                             
+	in method open device three (post,get;Data;True or false)
+	Note: Post Get Open and send.
+
+
+
+	Data respon vea jea text or another (if vea text {.txt} XMl{.xml})    
+	                    -->

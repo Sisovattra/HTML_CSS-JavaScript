@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		// The  first code is load in untidy but the second code is load in tidy.
+		// Out put of this is Id and name and swamp(first code)opposite second code. 
+		 
+		 //var arr = [220,12,130,34];
+		 //var strArr = ["jhjdf","hbsd"];
+		 var arrObj = [
+		 {id:101,name:"Panhaboth"},{id:312,name:"Kimhak"},{id:105,name:"Sovattra"},{id:1301,name:"Soriya"}];
+		 function clicked()
+		 {
+		 	arrObj.sort(function(a,b)
+		 		{
+		 			//return a.id - b.id
+		 			res1 = a.name.charCodeAt(0);
+		 			res2 = b.name.charCodeAt(0);//We don't need declaration in Array of javascript in this point.
+		 			//return a.name.length - b.name.length;
+		 			return res1 - res2;
+		 		});
+
+		 	for(i=0;i<arrObj.length;i++)
+		 	{
+		 		alert(arrObj[i].id+" : "+arrObj[i].name);
+		 	}
+		 }
+	</script>
+</head>
+<body>
+	<button onclick="clicked()">Click Me</button>
+
+</body>
+</html>

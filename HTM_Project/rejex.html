@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+// Regex is sth that connect with replace() //
+//replace ("sth that we want to remove" , "sth that we add")//
+// /g stand for global reserch //
+// /i stand for iteligent 	//
+// \d stand for number //
+// {start,finish}//
+
+ <script type="text/javascript">
+ 	var abc="Yi Sisovattra sunflower sun snow 22 11 2001";
+ 	var cba="Hello Helloy Hellob";
+ 	//abc.replace(/a/g,"boy");//
+ 	//var def=abc.replace(/ [a-z]ave/gi,"67");
+ 	//alert(abc);
+ 	//alert(def);
+ 	//var efg=abc.replace(/^[a-z]ave/gi,"56");
+ 	//alert(efg);
+ 	var fgh=abc.replace(/\d/g,"#");	//\d stand for number//
+ 	//alert(fgh);
+ 	var ghi=abc.replace(/\s/,"**");	//\s stand for space //
+ 	//alert(ghi);
+ 	//var hij=abc.rpelace(/[a-z]{4}/,"123");
+ 	//alert(hij);
+ 	var ijk=abc.replace(/[a-z]{5,8}\s/g,"*");
+ 	//alert(ijk);
+ 	var jkl=cba.replace(/Helloy?/g,"*");
+ 	//alert(jkl);
+ 	var klm=cba.replace(/e./g,"$");
+ 	var klm=cba.replace(/e../g,"$");
+ 	var klm=cba.replace(/e.+/g,"$");
+ 	//alert(klm);
+ 	var shd=cba.replace(/^h/gi,"*") ;
+ 	alert(shd);
+ 	var mnp=cba.replace(/(tr|fr)ee/)
+ 	var abg="hskdfkskfhakfkaskdfkajdkfhoh";
+ 	var ggh=abg.replace(/^h$/g,"%%");
+ 	alert(ggh);
+
+ </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

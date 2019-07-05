@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            var arr = [{id:123,name:"Nara"},{id:101,name:"Panhboth"},{id:324,name:"Kimhak"},{id:111, name:"Panha"}];
+            function Clicked()
+            {
+                arr.sort(function(a,b)
+                {
+                    if (a.name.length>b.name.length)
+                    {
+                        for (i=0;i<a.name.length;i++)
+                        {
+                            if (a.name.charCodeAt(i)!=b.name.charCodeAt(i))
+                            {
+                                return a.name.charCodeAt(i) - b.name.charCodeAt(i);
+                                i = a.name.length;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (i=0;i<b.name.length;i++)
+                        {
+                            if (a.name.charCodeAt(i)!=b.name.charCodeAt(i))
+                            {
+                                return a.name.charCodeAt(i) - b.name.charCodeAt(i);
+                                i = b.name.length;
+                            }
+                        }
+                    }
+                });
+                for (i=0;i<arr.length;i++)
+                {
+                    alert(arr[i].id + " : " + arr[i].name);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="Clicked()">Hello</button>
+    </body>
+</html>

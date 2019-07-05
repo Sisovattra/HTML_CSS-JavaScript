@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function clicked()
+      {
+        alert("Why u clicked me?");
+      }
+      function hovered()
+      {
+      	alert("Why u leave me?");
+      }
+      function loaded()
+      {
+      	alert("Whyyyyyyyyyy you have loaded the page?");
+      }
+      function keypressed()
+      {
+      	alert("Some key is pressed...");
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/1.css">
+  </head>
+  <body onload="loaded()" onkeypress="keypressed()">
+      <button onclick="clicked()">click me</button>
+
+      <div class="mydiv" onmouseout="hovered()">
+        Hover me....
+      </div>
+
+
+  </body>
+</html>

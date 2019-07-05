@@ -1,0 +1,24 @@
+.divstyle
+{
+	border: solid 5px blue;
+	background-color: green;
+	/*
+
+	padding-left: 100px;
+	padding-right: 200px;
+	padding-top: 50px;
+	padding-bottom: 75px;*/
+
+	padding: 100px 200px 50px 75px
+
+    max-width: 800px;
+
+	text-align: justify;
+	text-decoration: none;
+
+
+
+	
+
+
+}
